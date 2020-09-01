@@ -29,8 +29,8 @@ class FileManager {
 
     private static void moveFile(String spigotVersion) throws IOException {
         Path temp = Files.move
-                (Paths.get("D:\\Servers\\Test\\BuildTools\\" + "spigot-" + spigotVersion + ".jar"),
-                        Paths.get("D:\\Servers\\Test\\craftbukkit.jar"));
+                (Paths.get("BuildTools\\" + "spigot-" + spigotVersion + ".jar"),
+                        Paths.get("craftbukkit.jar"));
 
         System.out.println("File renamed and moved successfully");
     }
